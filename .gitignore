@@ -1,0 +1,6 @@
+# large weights live on Google Drive (see README "Getting the model weights")
+*.onnx.data
+embed_tokens.npy
+# TensorRT engines are device-specific, built locally by build_trt.py
+*.engine
+__pycache__/

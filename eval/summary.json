@@ -1,0 +1,70 @@
+{
+ "split": "task1_people_count/splits/split_v2.json:test",
+ "date": "2026-10-13",
+ "backends": {
+  "torch": {
+   "name": "PyTorch bf16 + LoRA (original)",
+   "n": 52,
+   "parse_rate": 1.0,
+   "person_present_acc": 0.9807692307692307,
+   "count_exact": 0.9423076923076923,
+   "count_mae": 0.057692307692307696,
+   "count_within1": 1.0,
+   "per_gt_count_exact": {
+    "0": "2/2",
+    "1": "5/5",
+    "2": "22/25",
+    "3": "10/10",
+    "4": "10/10"
+   },
+   "sec_per_frame_mean": 0.9314313725490194
+  },
+  "ort": {
+   "name": "ONNX Runtime CUDA fp16",
+   "n": 52,
+   "parse_rate": 1.0,
+   "person_present_acc": 1.0,
+   "count_exact": 0.9615384615384616,
+   "count_mae": 0.038461538461538464,
+   "count_within1": 1.0,
+   "per_gt_count_exact": {
+    "0": "2/2",
+    "1": "5/5",
+    "2": "23/25",
+    "3": "10/10",
+    "4": "10/10"
+   },
+   "sec_per_frame_mean": 0.8061568627450981,
+   "same_text_as_torch": "50/52",
+   "same_count_as_torch": "51/52"
+  },
+  "trt": {
+   "name": "TensorRT fp16",
+   "n": 52,
+   "parse_rate": 1.0,
+   "person_present_acc": 1.0,
+   "count_exact": 0.9615384615384616,
+   "count_mae": 0.038461538461538464,
+   "count_within1": 1.0,
+   "per_gt_count_exact": {
+    "0": "2/2",
+    "1": "5/5",
+    "2": "23/25",
+    "3": "10/10",
+    "4": "10/10"
+   },
+   "sec_per_frame_mean": 0.9300588235294117,
+   "same_text_as_torch": "50/52",
+   "same_count_as_torch": "51/52"
+  }
+ },
+ "numeric_check": {
+  "frame": "frame_000011.png",
+  "pixel_max_abs_diff": 0.008086323738098145,
+  "input_ids_equal": true,
+  "mrope_positions_equal": true,
+  "vision_embeds_rel_err_vs_bf16": 0.16274751722812653,
+  "prefill_logits_rel_err_vs_bf16": 0.016946516931056976,
+  "prefill_top1_equal": true
+ }
+}

@@ -1,0 +1,437 @@
+{
+ "summary": {
+  "name": "PyTorch bf16 + LoRA (original)",
+  "n": 52,
+  "parse_rate": 1.0,
+  "person_present_acc": 0.9807692307692307,
+  "count_exact": 0.9423076923076923,
+  "count_mae": 0.057692307692307696,
+  "count_within1": 1.0,
+  "per_gt_count_exact": {
+   "0": "2/2",
+   "1": "5/5",
+   "2": "22/25",
+   "3": "10/10",
+   "4": "10/10"
+  },
+  "sec_per_frame_mean": 0.9314313725490194
+ },
+ "preds": [
+  {
+   "frame": "frame_000011.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 1.19
+  },
+  {
+   "frame": "frame_000012.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.933
+  },
+  {
+   "frame": "frame_000013.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.943
+  },
+  {
+   "frame": "frame_000014.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.948
+  },
+  {
+   "frame": "frame_000015.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.949
+  },
+  {
+   "frame": "frame_000016.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.946
+  },
+  {
+   "frame": "frame_000017.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.941
+  },
+  {
+   "frame": "frame_000018.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.94
+  },
+  {
+   "frame": "frame_000019.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.942
+  },
+  {
+   "frame": "frame_000020.png",
+   "raw": "Person present: Yes\nPerson count: 1",
+   "person_present": true,
+   "person_count": 1,
+   "parsed_ok": true,
+   "seconds": 0.947
+  },
+  {
+   "frame": "frame_000071.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.943
+  },
+  {
+   "frame": "frame_000072.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.941
+  },
+  {
+   "frame": "frame_000073.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.94
+  },
+  {
+   "frame": "frame_000074.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.94
+  },
+  {
+   "frame": "frame_000075.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.942
+  },
+  {
+   "frame": "frame_000076.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.937
+  },
+  {
+   "frame": "frame_000077.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.907
+  },
+  {
+   "frame": "frame_000078.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.91
+  },
+  {
+   "frame": "frame_000079.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.906
+  },
+  {
+   "frame": "frame_000080.png",
+   "raw": "Person present: Yes\nPerson count: 3",
+   "person_present": true,
+   "person_count": 3,
+   "parsed_ok": true,
+   "seconds": 0.923
+  },
+  {
+   "frame": "frame_000091.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.936
+  },
+  {
+   "frame": "frame_000092.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.93
+  },
+  {
+   "frame": "frame_000093.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.926
+  },
+  {
+   "frame": "frame_000094.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.927
+  },
+  {
+   "frame": "frame_000095.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.938
+  },
+  {
+   "frame": "frame_000096.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.931
+  },
+  {
+   "frame": "frame_000097.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.94
+  },
+  {
+   "frame": "frame_000098.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.922
+  },
+  {
+   "frame": "frame_000099.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.939
+  },
+  {
+   "frame": "frame_000100.png",
+   "raw": "Person present: Yes\nPerson count: 4",
+   "person_present": true,
+   "person_count": 4,
+   "parsed_ok": true,
+   "seconds": 0.937
+  },
+  {
+   "frame": "frame_000121.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.938
+  },
+  {
+   "frame": "frame_000122.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.929
+  },
+  {
+   "frame": "frame_000123.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.938
+  },
+  {
+   "frame": "frame_000124.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.938
+  },
+  {
+   "frame": "frame_000125.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.935
+  },
+  {
+   "frame": "frame_000126.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.941
+  },
+  {
+   "frame": "frame_000127.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.942
+  },
+  {
+   "frame": "frame_000128.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.937
+  },
+  {
+   "frame": "frame_000129.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.934
+  },
+  {
+   "frame": "frame_000130.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.952
+  },
+  {
+   "frame": "frame_000131.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.918
+  },
+  {
+   "frame": "frame_000132.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.914
+  },
+  {
+   "frame": "frame_000133.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.916
+  },
+  {
+   "frame": "frame_000134.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.919
+  },
+  {
+   "frame": "frame_000135.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.92
+  },
+  {
+   "frame": "frame_000136.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.921
+  },
+  {
+   "frame": "frame_000137.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.918
+  },
+  {
+   "frame": "frame_000138.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.918
+  },
+  {
+   "frame": "frame_000139.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.915
+  },
+  {
+   "frame": "frame_000140.png",
+   "raw": "Person present: Yes\nPerson count: 2",
+   "person_present": true,
+   "person_count": 2,
+   "parsed_ok": true,
+   "seconds": 0.915
+  },
+  {
+   "frame": "frame_000027_n395.png",
+   "raw": "Person present: Yes\nPerson count: 0",
+   "person_present": true,
+   "person_count": 0,
+   "parsed_ok": true,
+   "seconds": 0.913
+  },
+  {
+   "frame": "frame_000027_n396.png",
+   "raw": "Person present: No\nPerson count: 0",
+   "person_present": false,
+   "person_count": 0,
+   "parsed_ok": true,
+   "seconds": 0.928
+  }
+ ]
+}
