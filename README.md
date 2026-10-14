@@ -122,8 +122,21 @@ pip3 install numpy pillow tokenizers cuda-python   # tensorrt ships with JetPack
 python3 build_trt.py                                # writes *_vision.engine and *_decoder.engine, a few minutes
 python3 onnx_runner.py --backend trt frame.png
 # {"image": "frame.png", "raw": "Person present: Yes\nPerson count: 2", "person_present": true, "person_count": 2, ...}
+
+# several images in one run
+python3 onnx_runner.py --backend trt frame1.png frame2.png frame3.png
+python3 onnx_runner.py --backend trt frames/*.png      # whole folder
 ```
 
+- **Several images per run**: the model is loaded once, then the images are processed one after another
+  (batch size 1, about 0.9 s each on an A10G), and each image prints its own JSON line. This is much faster than
+  starting the script once per image, which reloads the 4 GB model every time. To call it from your own code,
+  load once and call per frame:
+  ```python
+  from onnx_runner import PeopleCounter, parse_output
+  counter = PeopleCounter(backend="trt")            # load once
+  result = parse_output(counter.generate(frame))   # frame = file path or PIL.Image
+  ```
 - **Requires JetPack 6.x (TensorRT >= 10).** The engines are built STRONGLY_TYPED, which keeps the fp32 computation of the critical ops (RMSNorm, softmax, RoPE) inside the fp16 graph, and `position_ids` is an int64 input. TensorRT 8.5 (JetPack 5) supports neither.
 - **An engine is tied to the GPU architecture and TensorRT version**, so it must be built on the Orin and cannot be copied from another machine.
 - **Memory**: about 4.1 GB of engines, plus 0.6 GB of embeddings, the KV cache and activations. Orin NX 16 GB or AGX Orin works; an 8 GB Orin Nano does not fit.
